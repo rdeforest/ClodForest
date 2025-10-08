@@ -25,6 +25,33 @@
 - **Previous occurrence**: Likely covered in earlier sessions but not retained
 - **Action needed**: Search existing contexts for similar patterns and consolidate
 
+### SmartSheet Integration & Automation
+- [ ] **Set up SmartSheet MCP server**: Deploy https://github.com/smartsheet-platform/smar-mcp for Claude integration
+  - [ ] Test basic queries: "Find user stories without test cases"
+  - [ ] Identify patterns for local model vs Claude-level queries
+  - [ ] Document query patterns that provide most value
+- [ ] **Build Express automation app**: Create REST API for SmartSheet workflow automation
+  - [ ] Auto-update valid test case list when new test cases appear
+  - [ ] Link bugs to test cases automatically based on patterns
+  - [ ] Export to SQLite for local analysis and backup
+  - [ ] Sync with Git-tracked YAML for version control
+- [ ] **API integration patterns**: Leverage SmartSheet REST API directly
+  - [ ] Bulk status updates for test execution
+  - [ ] Cross-sheet dependency tracking
+  - [ ] Custom notifications with better logic than native workflows
+  - [ ] Template generation for new projects
+- [ ] **Webhook system**: Real-time sync for critical updates
+  - [ ] Immediate alerts for blockers or critical bugs
+  - [ ] Trigger external CI/CD based on story completion
+- [ ] **Power user optimizations**: Work around SmartSheet limitations
+  - [ ] External formula calculation pushing results back
+  - [ ] Bypass 500 automation rule limit with external logic
+  - [ ] Performance optimization for complex cross-sheet references
+- [ ] **Integration with ClodForest**: Connect to existing infrastructure
+  - [ ] Context generation from user stories
+  - [ ] Test case automation suggestions
+  - [ ] Bug pattern analysis
+
 ### Vaultwarden/Bitwarden Self-Hosted Password & Passkey Management
 - [ ] **Set up Vaultwarden on AWS**: Deploy Vaultwarden Docker container on EC2 or ECS
   - [ ] Choose appropriate instance size (t3.micro should suffice)
